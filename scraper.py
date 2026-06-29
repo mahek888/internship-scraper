@@ -14,9 +14,13 @@ def scrape_jobs(keyword):
 
     jobs = []
 
+    print("Checking robots.txt...")
+
     if not can_fetch(URL):
         print("Scraping is not allowed by robots.txt.")
         return jobs
+
+    print("Fetching webpage...")
 
     html = get_page(URL)
 

@@ -13,6 +13,8 @@ def main():
         print("Error: Keyword cannot be empty.")
         return
 
+    print("\nSearching internships...\n")
+
     jobs = scrape_jobs(keyword)
 
     if not jobs:
